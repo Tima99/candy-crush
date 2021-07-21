@@ -1,0 +1,13 @@
+/** Utility */
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-grabbing{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+}

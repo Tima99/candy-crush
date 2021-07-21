@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Crush</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/query.css">
+
+    <script type="module" src="./js/DynTbl.js"></script>
+    <!-- put candies on top i.e., on row 0 -->
+    <script type="module" src ="./js/PutCandies.js"></script>
+    <script type="module" src="./js/DropEffect.js"></script>
+    <script type="module" src="./js/MatchQuery.js"></script>
+    <script type="module" src="./js/CrushCandy.js"></script>
+    <script type="module" src="./js/AutoCrush.js"></script>
+    <script type="module" src="./js/EventListner.js"></script>
+    <script type="module" src="./js/script.js"></script>
+
+</head>
+<body>
+    
+    <div id="game-screen" class="center">
+
+        <div class="quotes-container">
+        </div>
+    </div>
+
+    
+    <!-- UI Input Handler -->
+    <div class="contain center">
+    <div class= "input-handler-box center">
+        <button id="start">Create</button>
+
+        <div class="input">
+            <label for="cols">Number of Rows <span class="select">4</span></label>
+            <input type="range" name="rows" id="rows" min="4" max="12" value="6" step="1">
+        </div>
+
+        <div class="input">
+            <label for="cols">Number of Columns <span class="select"></span></label>
+            <input type="range" name="cols" id="cols" min="4" max="12" value="6" step="1">
+        </div>
+
+        <div class="input">
+            <label for="candy-count">Number of Candies <span class="select"> 7 </span> </label>
+            <input type="range" name="candy-count" id="candy-count" min="3" max="9" value="5" step="1">
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Links -->
+
+    <div class="links">
+        <a href="https://github.com/tima99">
+            <img src="./assets/github-icon2.png" alt="github">
+        </a>
+
+    </div>
+
+
+    <script>
+        var candyCount = 5; // value must be less than 10 | there is 9 candies 0 to 8
+        var points = 0 , totalpoints = 0;
+
+        function rand(max = 1 , min = 0){
+            return Math.floor(Math.random()*(max-min) + min)
+        }
+
+        function get_cell(r , c){
+            let table = document.querySelector('table')
+
+            return table.rows[r].cells[c] 
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+/** Variables */
+
+
+
+:root{
+    --game-body : rgb(236, 236, 240);
+
+}
+
+
+/** Reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.laps-container::-webkit-scrollbar {
+    display: none;
+}
+ 
+.laps-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
