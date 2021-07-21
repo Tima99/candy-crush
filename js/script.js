@@ -19,6 +19,9 @@ const slider = document.querySelectorAll("input");
 
 slider.forEach((slide) => {
   slide.previousElementSibling.firstElementChild.innerHTML = slide.value;
+  if (slide.id == "rows") rows = Math.floor(slide.value);
+    else if (slide.id == "cols") cols = Math.floor(slide.value);
+    else candyCount = Math.floor(slide.value);
 });
 
 slider.forEach((slide) => {
