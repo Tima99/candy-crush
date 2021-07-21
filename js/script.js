@@ -45,7 +45,7 @@ function startGame(btn) {
         if(cols >= rows && cols < 8)
             size = 96 / cols - 4 + 'vw';
         else if(cols >= rows && cols < 12)
-            size = 96 / cols - 2 + 'vw';
+            size = 96 / cols + 'vw';
         else if( rows > cols)
             size = 96 / rows + 'vw';
         else
