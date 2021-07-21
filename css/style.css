@@ -1,4 +1,12 @@
 
+body{
+    transform: scaleZ(10rem);
+    -webkit-transform: scaleZ(10rem);
+    -moz-transform: scaleZ(10rem);
+    -ms-transform: scaleZ(10rem);
+    -o-transform: scaleZ(10rem);
+}
+
 #game-screen{
     width: 100%;
     height: 100vh;
@@ -34,16 +42,17 @@ table{
     -webkit-backdrop-filter: blur(.1rem);
 }
 table td{
-    width: 8vw;
-    height: 8vw;
+    width:  var(--td-size);
+    height: var(--td-size);
     text-align: center;
     user-select: none;
     border-color: gray;
+    color: rgba(32, 32, 32 , 0);
     
-    background-image: url('https://i.postimg.cc/yx2F3Bs5/special-candy-crush-combos.png');
-    background-size: 50vw;
-    background-position: 0% -1%;
-    color: rgba(0, 0 , 0, 0);
+    /* background-image: url('https://i.postimg.cc/yx2F3Bs5/special-candy-crush-combos.png'); */
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 table td[candy= '-1']{
@@ -51,41 +60,38 @@ table td[candy= '-1']{
 }
 
 table td[candy= '0']{
-    background-position: 0.4vw -1.3%;
+    background-image: url(../assets/purple-candy.png);
 }
 table td[candy= '1']{
-    background-image: url('https://i.postimg.cc/V6pBPFyq/Pics-Art-07-31-03-15-20.png');
-    background-size: 6.5vw;
-    background-position: .8vw .5vw;
+    background-image: url(../assets/orange-candy.png);
+    background-size: 82%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 table td[candy= '2']{
-    background-position-x: 16vw;
+    background-image: url(../assets/blue-candy.png);
 }
 table td[candy= '3']{
-    background-position-x: 24.5vw;
+    background-image: url(../assets/yellow-candy.png);
+    background-size: 74%;
 }
 table td[candy= '4']{
-    /* background-position-x: 32.6vw; */
-    background-position-x: -8.5vw;
+    background-image: url(../assets/red-candy.png);
 }
 
 table td[candy = '5']{
-    background-position-y: 31.5vw;
-    background-position-x: 24.2vw;
+    background-image: url(../assets/yellow-shade-candy.png);
+    background-size: 74%;
 }
 
 table td[candy = '6']{
-    background-position-y: 31.5vw;
-    background-position-x: 16vw;
+    background-image: url(../assets/blue-shade-candy.png);
 }
 table td[candy = '7']{
-    background-position-y: 15vw;
-    background-position-x: -8.1vw;
+    background-image: url(../assets/red-wraper-candy.png);
 }
 table td[candy = '8']{
-    background-position-y: 7.55vw;
-    background-position-x: -8.9vw;
+    background-image: url(../assets/color-ball-candy.png);
 }
 
 
@@ -99,7 +105,7 @@ table td[candy = '8']{
     justify-content: center;
 }
 .quote{
-    font-size: 4vw;
+    font-size: 7.5vw;
     z-index: 99;
     font-family: cursive;
     padding-bottom: 5rem;

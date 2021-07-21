@@ -41,7 +41,7 @@ function add_listeners(table) {
       if (touchY - endY < 0) swipe = "D";
       else swipe = "U";
     }
-    console.log(targetCandies);
+    // console.log(targetCandies);
     let cell = swipe_with_candy(swipe , this);
 
     if (cell) 
@@ -72,8 +72,8 @@ function swipe_with_candy(dirSwipe , table) { // return cell of touch end if fou
   else if (dirSwipe == "D") candyTouchX++;
   else return null;
 
-  if(candyTouchX < table.rows[0].cells.length &&
-    candyTouchY  <  table.rows.length &&
+  if(candyTouchX < table.rows.length &&
+    candyTouchY  <  table.rows[0].cells.length &&
     candyTouchY > -1 &&
     candyTouchX > -1)
     return table.rows[candyTouchX].cells[candyTouchY]

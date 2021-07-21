@@ -4,7 +4,8 @@
 
 :root{
     --game-body : rgb(236, 236, 240);
-
+    --td-size : 8vw;
+    --td-size-win : 8vh;
 }
 
 

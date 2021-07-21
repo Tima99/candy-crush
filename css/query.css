@@ -1,48 +1,11 @@
 @media screen and (orientation: landscape) {
   table td {
-    width: 8vh;
-    height: 8vh;
-    background-size: 48vh;
-  }
-
-  table td[candy="0"] {
-    background-position: 0.4vh -1.3%;
-  }
-  table td[candy="1"] {
-    background-image: url("https://i.postimg.cc/V6pBPFyq/Pics-Art-07-31-03-15-20.png");
-    background-size: 6.5vh;
-    background-position: 0.8vh 0.5vh;
-    background-repeat: no-repeat;
-  }
-  table td[candy="2"] {
-    background-position-x: 15.5vh;
-  }
-  table td[candy="3"] {
-    background-position-x: 23.5vh;
-  }
-  table td[candy="4"] {
-    /* background-position-x: 31.5vh; */
-    background-position-x: -8vh;
-    background-position-y: -1%;
-  }
-  table td[candy = '5']{
-    background-position-y: 30.4vh;
-    background-position-x: 23.5vh;
-  }
-  table td[candy = '6']{
-    background-position-y: 30.5vh;
-    background-position-x: 15.5vh;
-  }
-  table td[candy = '7']{
-    background-position-y: 14.5vh;
-    background-position-x: -7.7vh;
-  }
-  table td[candy = '8']{
-    background-position-y: 7.7vh;
-    background-position-x: -8.5vh;
+    width: var(--td-size-win);
+    height: var(--td-size-win);
   }
 
   /* tags */
+
 
   .quote{
     font-size: 4.5vh;
