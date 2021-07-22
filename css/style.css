@@ -119,8 +119,8 @@ table td[candy = '8']{
     width: 100%;
     text-align: center;
 }
-tbody{
-    text-align: center;
+#tbody{
+    position: relative;
 }
 .fly{
     animation: fly 1s ease-in-out .3s alternate;
