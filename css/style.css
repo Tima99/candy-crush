@@ -107,7 +107,7 @@ table td[candy = '8']{
 .quote{
     position: absolute;
     top: 5%;
-    font-size: 6.8vw;
+    font-size: 7vw;
     z-index: 99;
     font-family: cursive;
     /* padding-bottom: 5rem; */
