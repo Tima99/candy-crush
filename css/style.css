@@ -96,7 +96,7 @@ table td[candy = '8']{
 }
 
 
-.quotes-container{ /* this is remove now we append quote to tbody for show on table */
+.quotes-container{
     position: absolute;
     top: 0;
     width: 100%;
@@ -107,7 +107,8 @@ table td[candy = '8']{
 }
 .quote{
     position: absolute;
-    top: 5%;
+    /*     top: 5%; */
+    bottom : 0;
     font-size: 7vw;
     z-index: 99;
     font-family: 'Courgette', cursive;
