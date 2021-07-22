@@ -119,6 +119,11 @@ table td[candy = '8']{
     letter-spacing: 2px;
     width: 100%;
     text-align: center;
+    transform: translateY(10vh);
+        -webkit-transform: translateY(10vh);
+        -moz-transform: translateY(10vh);
+        -ms-transform: translateY(10vh);
+        -o-transform: translateY(10vh);
 }
 #tbody{
     position: relative;
@@ -132,11 +137,11 @@ table td[candy = '8']{
 @keyframes fly{
     0%{
         opacity: 1;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
+        transform: translateY(10vh);
+        -webkit-transform: translateY(10vh);
+        -moz-transform: translateY(10vh);
+        -ms-transform: translateY(10vh);
+        -o-transform: translateY(10vh);
 }
     100%{
         opacity: 0;
