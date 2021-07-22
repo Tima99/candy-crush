@@ -17,10 +17,10 @@ const quotes = [
 
 const quoteFlyTime = 1000;
 
-// let quoteContainer = document.querySelector('.quotes-container')
+ let quoteContainer = document.querySelector('.quotes-container')
 
 function create_quote(quote){
-    let quoteContainer = document.querySelector('table')
+//    let quoteContainer = document.querySelector('.quotes-container')
             
     let quoteDiv = document.createElement('div')
     quoteDiv.style.animationDuration = quoteFlyTime;
