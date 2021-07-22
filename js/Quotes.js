@@ -1,19 +1,26 @@
 
 const quotes = [
     'Tasty',
-    'Yummy Crush',
+    'Yummy',
     'Delicious',
     'Wonderful',
-    'Unbelievable Crush',
-    'Eye Catching',
-    'Bete Moj Kr Di',
-    'Tasty Delicious'
+    'Hotter',
+    'Dramatic',
+    'Impressive',
+    'Flavorful',
+    'Viral',
+    'Striking',
+    'Heat Up',
+    'Over-Crush',
+
 ]
 
 const quoteFlyTime = 1000;
 
-let quoteContainer = document.querySelector('.quotes-container')
+// let quoteContainer = document.querySelector('.quotes-container')
+
 function create_quote(quote){
+    let quoteContainer = document.querySelector('tbody')
             
     let quoteDiv = document.createElement('div')
     quoteDiv.style.animationDuration = quoteFlyTime;
@@ -27,11 +34,12 @@ function create_quote(quote){
 }
 
 function show_quotes(pts){
-    // console.log(pts);
+    // console.log(pts , quotes.length);
     if(pts > quotes.length - 1)
-        create_quote(quotes[quotes.length - 1])
+        create_quote(quotes[quotes.length - rand(6 , 1)])
     else if (pts > 3)
         create_quote(quotes[pts - 4])
+    totalpoints =0;
 }
 
 export default show_quotes;

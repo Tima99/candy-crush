@@ -41,7 +41,7 @@ function auto_crush() {
   } 
   else {
     show_quotes(totalpoints);
-    totalpoints = 0;
+    totalpoints =0;
   }
 }
 

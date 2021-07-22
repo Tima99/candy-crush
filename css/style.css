@@ -95,7 +95,7 @@ table td[candy = '8']{
 }
 
 
-.quotes-container{
+.quotes-container{ /* this is remove now we append quote to tbody for show on table */
     position: absolute;
     top: 0;
     width: 100%;
@@ -105,16 +105,21 @@ table td[candy = '8']{
     justify-content: center;
 }
 .quote{
-    font-size: 7.5vw;
+    position: absolute;
+    top: 5%;
+    font-size: 6.8vw;
     z-index: 99;
     font-family: cursive;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
     opacity: 0;
     color: yellow;
-    position: absolute;
-    bottom: 0;
-    text-shadow: 0px 0px 1rem yellow;
+    text-shadow: 0px 0px 1.3rem rgb(243, 243, 16);
     letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+tbody{
+    text-align: center;
 }
 .fly{
     animation: fly 1s ease-in-out .3s alternate;
@@ -123,13 +128,21 @@ table td[candy = '8']{
 
 @keyframes fly{
     0%{
-        padding-bottom: 0rem;
         opacity: 1;
-    }
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
     100%{
-        padding-bottom: 3.5rem;
         opacity: 0;
-    }
+        transform: translateY(-3.8rem);
+        -webkit-transform: translateY(-3.8rem);
+        -moz-transform: translateY(-3.8rem);
+        -ms-transform: translateY(-3.8rem);
+        -o-transform: translateY(-3.8rem);
+}
 }
 
 
