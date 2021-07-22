@@ -28,6 +28,8 @@ function add_listeners(table) {
     touchY = e.touches[0].clientY;
     targetCandies.length = 0;
     on_down(e);
+    window.addEventListener("scroll" , no_scroll)
+    e.preventDefault()
   });
 
   table.addEventListener("touchend", function (e) {
@@ -48,6 +50,8 @@ function add_listeners(table) {
       targetCandies.push(cell);
 
     on_remove(this)
+    window.addEventListener("scroll" , no_scroll)
+    e.preventDefault()
   });
 }
 
@@ -58,6 +62,11 @@ function swipe_candies(targetCandies) {
   targetCandies[0].setAttribute("candy", targetCandies[1].innerText);
   targetCandies[1].innerText = temp;
   targetCandies[1].setAttribute("candy", temp);
+}
+
+// *disable scrolling when event occur on table
+function no_scroll(){
+  window.scroll(0, 0)
 }
 
 // *touch devices
