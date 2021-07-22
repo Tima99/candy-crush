@@ -29,6 +29,7 @@ function generate_table(rows = 2, cols = null) {
 
     // add the row to the end of the table gameScreen
     tableBody.appendChild(row);
+    tableBody.setAttribute('id' , 'tbody')
   }
 
   // put the <tbody> in the <table>

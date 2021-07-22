@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 body{
     transform: scaleZ(10rem);
@@ -109,7 +110,7 @@ table td[candy = '8']{
     top: 5%;
     font-size: 7vw;
     z-index: 99;
-    font-family: cursive;
+    font-family: 'Courgette', cursive;
     /* padding-bottom: 5rem; */
     opacity: 0;
     color: yellow;

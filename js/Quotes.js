@@ -20,7 +20,7 @@ const quoteFlyTime = 1000;
 // let quoteContainer = document.querySelector('.quotes-container')
 
 function create_quote(quote){
-    let quoteContainer = document.querySelector('#game-screen table tbody')
+    let quoteContainer = document.querySelector('#tbody')
             
     let quoteDiv = document.createElement('div')
     quoteDiv.style.animationDuration = quoteFlyTime;
