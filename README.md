@@ -11,7 +11,7 @@
 - You have to match atleast 3 candies in a row for crush.
 - For mouse devices - click and move candy for crush.
 - For touch devices - swipe controls are available.
-- Swipe candy which is matching for crush.
+- Swipe candy for match happen and crush them ,Hurrah!.
 
 # Drawbacks
 - I try to implement all features except one that is If there is no candies left for crush or no moves left , auto place candy for match is not implemented.

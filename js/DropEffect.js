@@ -19,6 +19,7 @@ export function drop_effect(end, cells, startFrm = 0) {
 
   end--; // last row do not needs to move so end is substract by 1
 
+  console.log('Run Drpeftc');
   moveCandies = setInterval(function () {
     move_candies(end, cells);
   }, drop_anim_speed);
@@ -53,7 +54,7 @@ export function move_candies(end, cells, startRow = null) {
 
   if (start > end - 1) {
     clearInterval(moveCandies);
-
+    console.log('Clear done');
     auto_crush();
     return;
   }

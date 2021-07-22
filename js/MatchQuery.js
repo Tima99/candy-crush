@@ -6,10 +6,9 @@
 let candiesMatchHorizontal = [];
 let candiesMatchVertical = [];
 
-export function is_candies_match(swipeCandies, table) {
-  // reset
+export function is_candies_match(swipeCandy, table) {
 
-  let candy1 = swipeCandies[1]; // we obtain two candies from swipe - candy1 is on focus
+  let candy1 = swipeCandy; // we obtain two candies from swipe - candy1 is on focus
   let [cols, rows] = [table.rows[0].cells.length, table.rows.length];
   let [c1col, c1row] = [
     Math.floor(candy1.getAttribute("data-col")),

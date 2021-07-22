@@ -4,7 +4,7 @@ import crush_candy from "./CrushCandy.js";
 let targetCandies = [];
 let isMouseDown = false;
 
-const crushDelay = 200;
+const crushDelay = 50;
 const reverseCandyDelay = 280;
 
 let swipe = null;
@@ -54,7 +54,6 @@ function add_listeners(table) {
     e.preventDefault()
   });
 }
-
 
 function swipe_candies(targetCandies) {
   let temp = targetCandies[0].innerText;
@@ -119,13 +118,15 @@ function on_remove(_table) {
 
   // console.log(_table);
   // we now checked is swipe candies match
-  let crushCandies = is_candies_match(targetCandies, _table);
-  if (crushCandies.length) {
+  let crushCandies = is_candies_match(targetCandies[0], _table);
+  let crushCandies2 = is_candies_match(targetCandies[1] , _table);
+  if (crushCandies.length || crushCandies2.length) {
     let table = _table;
     setTimeout(function () {
       crush_candy(crushCandies, table);
     }, crushDelay);
-  } else {
+  }
+  else {
     let swipeCancel = [...targetCandies];
     setTimeout(function () {
       swipe_candies(swipeCancel);
